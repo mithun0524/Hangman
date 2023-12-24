@@ -22,6 +22,7 @@ while not end_of_game:
     if chosen_word[letter] == guess:
       display[letter] = guess
   print(' '.join(display))
+  
   if guess not in chosen_word:  
     lives -= 1
     print(art.stages[lives])
